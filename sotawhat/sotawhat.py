@@ -220,7 +220,11 @@ def txt2reports(txt, keyword, num_to_show):
             report, has_number = get_report(paper, keyword)
 
             if has_number:
-                print(report)
+                try:
+                    print(report)
+                except:
+                    report = report.encode(encoding='utf-8', errors='ignore')
+                    print(report)
                 print('====================================================')
                 num_to_show -= 1
             elif report:
