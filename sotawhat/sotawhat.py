@@ -252,7 +252,7 @@ def get_papers(keyword, num_results=5):
             query_temp = 'https://arxiv.org/search/?searchtype=all&query={}&abstracts=show&size={}&order=-announced_date_first&start={}'
     keyword_q = keyword.replace(' ', '+')
     page = 0
-    per_page = 200
+    per_page = 100
     num_to_show = num_results
     all_unshown = []
 
