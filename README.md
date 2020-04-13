@@ -54,13 +54,12 @@ Search in:
 
 Solution:
 
-```
-- web search: http://www.nltk.org/nltk_data/
-- download: https://raw.githubusercontent.com/nltk/nltk_data/gh-pages/packages/tokenizers/punkt.zip
-- unzip punkt.zip as punkt folder
-- cp punkt to '/usr/local/share/nltk_data' (one on folders available in search hint)
-- final folder tree: '/usr/local/share/nltk_data/tokenizers/punkt' 
-(folders like nltk_data, tokenizers may need create at first if not exists)
+```bash
+wget https://raw.githubusercontent.com/nltk/nltk_data/gh-pages/packages/tokenizers/punkt.zip
+unzip punkt.zip
+mkdir /usr/local/share/nltk_data  # one on folders available in search hint
+mkdir /usr/local/share/nltk_data/tokenizers
+cp -r punkt /usr/local/share/nltk_data/tokenizers
 ```
 
 
