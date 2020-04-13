@@ -35,6 +35,35 @@ this will be fixed by reinstalling certificates
 $ /Applications/Python\ 3.x/Install\ Certificates.command
 ```
 
+In MacOS, you can get the error about nltk
+
+```
+Resource punkt not found.
+Please use the NLTK Downloader to obtain the resources:
+
+>>> import nltk
+>>> nltk.download('punkt')
+
+...
+
+Search in:
+- '/usr/share/nltk_data'
+- '/usr/local/share/nltk_data'
+- ...
+```
+
+Solution:
+
+```
+- web search: http://www.nltk.org/nltk_data/
+- download: https://raw.githubusercontent.com/nltk/nltk_data/gh-pages/packages/tokenizers/punkt.zip
+- unzip punkt.zip as punkt folder
+- cp punkt to '/usr/local/share/nltk_data' (one on folders available in search hint)
+- final folder tree: '/usr/local/share/nltk_data/tokenizers/punkt' 
+(folders like nltk_data, tokenizers may need create at first if not exists)
+```
+
+
 # Usage
 This project adds the `sotawhat` script for you to run globally on Terminal or commandline.
 
