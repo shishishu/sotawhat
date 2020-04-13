@@ -57,7 +57,7 @@ Solution:
 ```bash
 $ wget https://raw.githubusercontent.com/nltk/nltk_data/gh-pages/packages/tokenizers/punkt.zip
 $ unzip punkt.zip
-$ mkdir /usr/local/share/nltk_data  # one on folders available in search hint
+$ mkdir /usr/local/share/nltk_data  # one of folders available in search hint
 $ mkdir /usr/local/share/nltk_data/tokenizers
 $ cp -r punkt /usr/local/share/nltk_data/tokenizers
 ```
